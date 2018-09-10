@@ -10,40 +10,33 @@ import {
 } from '~/components/Nav';
 import withAuth from '~/utils/auth/withAuth';
 import { Logo } from '~/components/Logo';
-import LanguageNavItem from './LanguageNavItem';
 import styles from './Navbar.scss';
 
 const cx = classNames.bind(styles);
 
 @withAuth
 @translate()
-class Navbar extends Component {
+class SettingNavbar extends Component {
   render() {
     const { isSignIn, currentUser } = this.props.auth;
     const { t } = this.props;
 
-    const AuthNavItem = () =>
-      isSignIn ? (
-        <NavItem>{currentUser.email}</NavItem>
-      ) : (
-        <React.Fragment>
-          <NavItem to="/signup">{t('nav.signUp')}</NavItem>
-          <NavItem to="/signin">{t('nav.signIn')}</NavItem>
-        </React.Fragment>
-      );
+    const NavItems = () => (
+      <React.Fragment>
+        <NavItem>nav1</NavItem>
+        <NavItem>nav2</NavItem>
+      </React.Fragment>
+    );
 
     return (
       <BootstrapNavbar className={cx('navbar', 'border-bottom')} light expand>
-        <NavbarBrand>
-          <Logo />
-        </NavbarBrand>
+        {t('nav.setting')}
         <Nav className="ml-auto" horizontal="horizontal" navbar>
-          <AuthNavItem />
-          <LanguageNavItem />
+          <NavItems />
         </Nav>
       </BootstrapNavbar>
     );
   }
 }
 
-export default Navbar;
+export default SettingNavbar;

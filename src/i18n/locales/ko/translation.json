@@ -1,8 +1,9 @@
 {
   "nav": {
-    "signIn": "로그인",
-    "signOut": "로그아웃",
-    "signUp": "가입하기"
+    "Account": "계정",
+    "Transaction": "거래",
+    "Key": "키",
+    "Setting": "설정"
   },
 
   "signIn": {

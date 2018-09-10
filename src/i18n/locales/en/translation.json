@@ -1,8 +1,9 @@
 {
   "nav": {
-    "signIn": "Sign in",
-    "signOut": "Sign out",
-    "signUp": "Sign up"
+    "account": "Account",
+    "transaction": "Tx",
+    "key": "Key",
+    "setting": "Setting"
   },
 
   "signIn": {
