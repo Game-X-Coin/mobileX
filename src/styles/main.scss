@@ -1,9 +1,18 @@
 @import 'variables/all';
 @import 'base/all';
 @import 'bootstrap/all';
+
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.coin {
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin: 2px 5px;
+  }
 }

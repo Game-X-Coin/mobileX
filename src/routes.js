@@ -10,28 +10,24 @@ const header = [
   },
   {
     path: '/account',
-    exact: true,
     component: importedComponent(() =>
       import('~/pages/Layout/Header/AccountNavbar')
     )
   },
   {
     path: '/transaction',
-    exact: true,
     component: importedComponent(() =>
       import('~/pages/Layout/Header/TransactionNavbar')
     )
   },
   {
     path: '/key',
-    exact: true,
     component: importedComponent(() =>
       import('~/pages/Layout/Header/KeyNavbar')
     )
   },
   {
     path: '/setting',
-    exact: true,
     component: importedComponent(() =>
       import('~/pages/Layout/Header/SettingNavbar')
     )
@@ -53,6 +49,15 @@ const main = [
     path: '/signin',
     exact: true,
     component: importedComponent(() => import('~/pages/SignIn'))
+  },
+  {
+    path: '/account',
+    exact: true,
+    component: importedComponent(() => import('~/pages/Account'))
+  },
+  {
+    path: '/account',
+    component: importedComponent(() => import('~/pages/Account/Detail'))
   }
 ];
 

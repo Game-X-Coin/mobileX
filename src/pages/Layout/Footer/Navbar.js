@@ -2,14 +2,8 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import classNames from 'classnames/bind';
 
-import {
-  Navbar as BootstrapNavbar,
-  NavbarBrand,
-  Nav,
-  NavItem
-} from '~/components/Nav';
+import { Navbar as BootstrapNavbar, Nav, NavItem } from '~/components/Nav';
 import withAuth from '~/utils/auth/withAuth';
-import { Logo } from '~/components/Logo';
 import styles from './Navbar.scss';
 
 const cx = classNames.bind(styles);
@@ -18,7 +12,6 @@ const cx = classNames.bind(styles);
 @translate()
 class Navbar extends Component {
   render() {
-    const { isSignIn, currentUser } = this.props.auth;
     const { t } = this.props;
 
     const NavItems = () => (

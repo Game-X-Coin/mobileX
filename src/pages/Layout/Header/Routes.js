@@ -6,7 +6,7 @@ import { header as routes } from '~/routes';
 const Routes = () => (
   <Switch>
     {routes.map((route, i) => (
-      <Route {...route} />
+      <Route key={i} {...route} />
     ))}
   </Switch>
 );
