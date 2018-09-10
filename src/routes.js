@@ -58,6 +58,11 @@ const main = [
   {
     path: '/account',
     component: importedComponent(() => import('~/pages/Account/Detail'))
+  },
+  {
+    path: '/setting',
+    exact: true,
+    component: importedComponent(() => import('~/pages/Setting'))
   }
 ];
 
