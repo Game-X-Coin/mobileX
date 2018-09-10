@@ -20,11 +20,11 @@ class Detail extends Component {
           </div>
           <div className="border-bottom">
             <div className="font-weight-bold">Network</div>
-            <div>0 bytes / 1000.KiB ( 1.0000 EOS )</div>
+            <div>0 bytes / 1,000 KB ( 1.0000 EOS )</div>
           </div>
           <div className="border-bottom">
             <div className="font-weight-bold">RAM</div>
-            <div>3.37 KiB / 3.98 KiB</div>
+            <div>3.37 KB / 3.98 KB</div>
           </div>
         </div>
         <div className="row text-center">
